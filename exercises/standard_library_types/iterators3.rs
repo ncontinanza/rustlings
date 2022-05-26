@@ -25,9 +25,12 @@ pub fn divide(a: i32, b: i32) -> Result<i32, DivisionError> {
         return Err(DivisionError::DivideByZero);
     }
     if a % b != 0 {
-        return Err(DivisionError::NotDivisible(NotDivisibleError{dividend: a, divisor: b}));
+        return Err(DivisionError::NotDivisible(NotDivisibleError {
+            dividend: a,
+            divisor: b,
+        }));
     }
-    Ok(a/b) 
+    Ok(a / b)
 }
 
 // Complete the function and return a value of the correct type so the test passes.

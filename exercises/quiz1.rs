@@ -9,13 +9,13 @@
 // the price of an order of apples given the quantity bought. No hints this time!
 
 // Put your function here!
- pub fn calculate_apple_price(amount: i32) -> i32 {
+pub fn calculate_apple_price(amount: i32) -> i32 {
     let mut price = 2;
     if amount > 40 {
         price = 1;
     }
     price * amount
- }
+}
 
 // Don't modify this function!
 #[test]
